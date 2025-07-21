@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beranda - M. Rizky Ramadhan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header id="navbar">
+    <nav>
+      <div class="logo">
+        <img src="../img/logo.jpg" alt="Logo" />
+      </div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="/pages/portfolio.html">Project</a></li>
+        <li><a href="/pages/experience.html">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Home Section -->
+    <section id="home" class="welcome">
+      <h1>Hello! I am Rizky</h1>
+      <p>I am an Electronics Engineering student at STATE ELECTRONICS POLYTECHNIC OF SURABAYA</p>
+      <div class="slider">
+        <img src="img/welcome1.jpg" class="slide active" alt="Slide 1" />
+        <img src="img/welcome2.jpg" class="slide" alt="Slide 2" />
+        <img src="img/welcome3.jpg" class="slide" alt="Slide 3" />
+        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <img src="img/rizky.jpg" alt="Foto Rizky" class="about-photo" />
+          <div class="about-text">
+            <p>Hello, I'm <strong>M. Rizky Ramadhan</strong>, an Electronics Engineering student with a keen interest in <strong>embedded systems</strong>, <strong>industrial automation</strong>, and <strong>robotics</strong>.</p>
+            <p>I was once part of the PENS robotics team and have experience as a Microprocessor Systems laboratory assistant. I enjoy the challenge of developing microcontroller-based systems and exploring technologies such as <strong>PLC</strong> and <strong>IoT</strong>.</p>
+            <p>I have a thirst for knowledge and love exploring innovative technical solutions that can be applied in the real world.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- Education -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-content">
+          <div class="edu-item">
+            <h3>Politeknik Elektronika Negeri Surabaya (PENS)</h3>
+            <p>Bachelor of Applied Science - BASc, Electrical and Electronics Engineering</p>
+            <p><em>2024 - 2028</em></p>
+          </div>
+          <!-- Tambahkan item lainnya jika ada -->
+        </div>
+      </div>
+
+      <div class="education-content">
+          <div class="edu-item">
+            <h3>SMK Negeri 2 Palembang</h3>
+            <p>High School Diploma, Mechatronics Engineering</p>
+            <p><em>2020 - 2024</em></p>
+          </div>
+          <!-- Tambahkan item lainnya jika ada -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact-section">
+  <h2 class="section-title">Contact Info</h2>
+  <div class="contact-info">
+    <p>Email: <a href="mailto:rizkyr1610@gmail.com">rizkyr1610@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/m-rizky-ramadhan-b7070a316?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BK6ejiMGJTvqozF7EdbxbRg%3D%3D" target="_blank">linkedin.com/in/M. Rizky Ramadhan</a></p>
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Created by M. Rizky Ramadhan</p>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="js/script.js"></script>
+  <script src="js/navbar.js"></script>
+
+</body>
+</html>
