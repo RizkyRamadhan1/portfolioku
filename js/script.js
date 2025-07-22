@@ -74,8 +74,8 @@ window.addEventListener("load", () => {
 
   // ========== HAMBURGER MENU TOGGLE ==========
   const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("nav-links");
-
+  const navLinks = document.querySelector(".nav-links");
+  
   if (hamburger && navLinks) {
     // Toggle menu saat hamburger diklik
     hamburger.addEventListener("click", function (e) {
