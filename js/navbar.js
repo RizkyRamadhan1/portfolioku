@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.getElementById("hamburger");
-  const navLinks = document.querySelectr(".nav-links");
+  const navLinks = document.querySelector(".nav-links");
   const overlay = document.getElementById("overlay");
 
   if (!hamburger || !navLinks || !overlay) {
