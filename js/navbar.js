@@ -11,28 +11,31 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
-  hamburger.addEventListener("click", function (e) {
-    e.stopPropagation();
+  // Toggle menu saat hamburger diklik
+  hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
-    overlay.style.display = navLinks.classList.contains("active") ? "block" : "none";
+    overlay.classList.toggle("active");
   });
 
+  // Tutup menu saat klik di luar
   document.addEventListener("click", function (e) {
     if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
       navLinks.classList.remove("active");
-      overlay.style.display = "none";
+      overlay.classList.remove("active");
     }
   });
 
+  // Tutup menu saat link diklik
   navLinks.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", function () {
       navLinks.classList.remove("active");
-      overlay.style.display = "none";
+      overlay.classList.remove("active");
     });
   });
 
-  overlay.addEventListener("click", function () {
+  // Tutup menu saat overlay diklik
+  overlay.addEventListener("click", () => {
     navLinks.classList.remove("active");
-    overlay.style.display = "none";
+    overlay.classList.remove("active");
   });
 });
