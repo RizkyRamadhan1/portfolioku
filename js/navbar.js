@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     overlay.style.display = navLinks.classList.contains("active") ? "block" : "none";
   });
 
-  // Tutup menu saat klik di luar
+  // Tutup menu saat klik di luar menu dan hamburger
   document.addEventListener("click", function (e) {
     if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
       navLinks.classList.remove("active");
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Tutup menu saat klik link
+  // Tutup saat klik salah satu link
   navLinks.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", function () {
       navLinks.classList.remove("active");
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Tutup menu saat klik overlay
+  // Tutup saat klik overlay
   overlay.addEventListener("click", function () {
     navLinks.classList.remove("active");
     overlay.style.display = "none";
